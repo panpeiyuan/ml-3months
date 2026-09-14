@@ -22,3 +22,21 @@ else:
     print("需要补课")
 per_extscore=((max_score-min_score)/min_score)*100
 print("百分比%.2f%%"%per_extscore)
+s=0
+for i in score:
+    if i>=jige:
+        s+=1
+print(f"及格人数:{s}人")
+print(f"及格率:{((s/population)*100):.2f}%")
+n=0
+for i in score:
+    if i>=90:
+        n+=1
+print(f"90分以上人数为{n}")
+max_score1=score[0]
+for i in score:
+    if i>max_score1:
+        max_score1=i
+print(max_score1)
+
+
